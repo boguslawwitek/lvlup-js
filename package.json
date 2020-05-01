@@ -1,0 +1,24 @@
+{
+  "name": "lvlup-js",
+  "version": "0.1.1",
+  "description": "Simple library for LVLUP V4 API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boguslawwitek/lvlup-js.git"
+  },
+  "keywords": [
+    "lvlup.pro",
+    "lvlupv4",
+    "lvlup"
+  ],
+  "author": "Bogusław Witek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boguslawwitek/lvlup-js/issues"
+  },
+  "homepage": "https://bwitek.dev/lvlup-js",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
