@@ -49,12 +49,16 @@ exports.validatingUrl = function validatingUrl(parameter) {
     return parameter;
 }
 
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
 exports.validatingAmount = function validatingAmount(parameter) {
     if(!parameter) {
         console.log('Invalid Amount!');
         return false;
-    }
-
+    } 
+    
     if(typeof parameter !== 'string') {
         console.log('Invalid Amount!');
         return false;
@@ -71,24 +75,8 @@ exports.validatingAmount = function validatingAmount(parameter) {
         return false;
     }
 
-    if(!validateTwoDecimalPlaces(number)) {
-        console.log('Invalid Amount!');
-        return false;
-    }
-
-    const amount = parameter.toString();
-
+    const amount = roundToTwo(number).toFixed(2);
     return amount;
-}
-
-function validateTwoDecimalPlaces(decimalValue) { 
-    var rx = new RegExp(/\d+\.\d\d(?!\d)/);
-    if(rx.test(decimalValue)) { 
-       return true; 
-    }
-    else { 
-       return false; 
-    } 
 }
 
 exports.validatingPorts = function validatingPorts(ports) {

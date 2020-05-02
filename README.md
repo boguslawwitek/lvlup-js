@@ -15,7 +15,7 @@ const LvlupApi = require('lvlup-js');
 const lvlup = new LvlupApi('API-KEY');
 
 (async () => {
-    const linkForPayment = await lvlup.createPayment('32.00', 'https://example.site/redirect', 'https://example.site/webhook');
+    const linkForPayment = await lvlup.createPayment('32', 'https://example.site/redirect', 'https://example.site/webhook');
     console.log(linkForPayment);
 })()
 ```
@@ -26,7 +26,7 @@ const LvlupApi = require('lvlup-js');
 const lvlup = new LvlupApi('API-KEY', {env: 'sandbox'});
 
 (async () => {
-    const linkForPayment = await lvlup.createPayment('32.00', 'https://example.site/redirect', 'https://example.site/webhook');
+    const linkForPayment = await lvlup.createPayment('32', 'https://example.site/redirect', 'https://example.site/webhook');
     console.log(linkForPayment);
 })()
 ```
