@@ -1,6 +1,6 @@
 # LVLUP-JS
 
-**A very simple JavaScript library for [api.lvlup.pro/v4](https://api.lvlup.pro/v4) and [sandbox-api.lvlup.pro/v4](https://sandbox-api.lvlup.pro/v4).**
+**A very simple JavaScript library for [api.lvlup.pro/v4](https://api.lvlup.pro/v4) and [api.sandbox.lvlup.pro/v4](https://api.sandbox.lvlup.pro/v4).**
 
 ------
 
