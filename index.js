@@ -107,7 +107,7 @@ class LvlupApi {
     * 
     * @param {string} apiKey - API key
     * @param {object} [environment] - Startup Arguments Object
-    * @param {string} [environment.env=deployment] - Sets enviroment, "deployment" for api.lvlup.pro or "sandbox" for sandbox-api.lvlup.pro
+    * @param {string} [environment.env=deployment] - Sets enviroment, "deployment" for api.lvlup.pro or "sandbox" for api.sandbox.lvlup.pro
     */
     constructor(apiKey, environment={env: 'deployment'}) {
         if((!(environment.env === 'deployment' || environment.env === 'sandbox')) || typeof environment.env !== 'string') throw new Error('Invalid environment!');
